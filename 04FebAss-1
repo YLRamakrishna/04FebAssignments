@@ -1,0 +1,31 @@
+/*Assignment-1 Y.L.Ramakrishna AWDC KKD 04-02-22  Count no.of vowels and consonants*/
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char c,ch[50]; 
+    int i,n, vowel=0, consonant=0;
+    printf("Enter any string: ");
+    gets(ch);
+    n = strlen(ch);
+    for(i=0; i<n; i++)
+    {
+       c=ch[i];
+       switch(c)
+            {
+                case 'A':
+		        		case 'a':
+			        	case 'E':	
+                case 'e':
+                case 'I':
+                case 'i':
+                case 'O': 	
+                case 'o':
+                case 'U':
+                case 'u': vowel++; break;
+                default: consonant++;
+            }
+    }
+    printf("Total no.of vowels :%d",vowel);
+    printf("\nTotal no.of consonants :%d",consonant);
+}
