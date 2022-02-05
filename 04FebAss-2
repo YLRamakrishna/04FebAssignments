@@ -1,0 +1,20 @@
+/*Assignment-2 Y.L.Ramakrishna AWDC KKD 04-02-22   Sting palindrome*/
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+  char str1[100],str2[100];
+
+  printf("Enter any string :\n");
+  gets(str1);
+
+  strcpy(str2, str1); 
+  strrev(str2);
+
+  if (strcmp(str1,str2) == 0)
+    printf("The string is a palindrome.\n");
+  else
+    printf("The string isn't a palindrome.\n");
+
+  return 0;
+}
